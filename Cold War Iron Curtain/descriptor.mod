@@ -1,5 +1,5 @@
 name="Cold War Iron Curtain Dev Build"
-path="C:/Users/zzman_/Documents/Paradox Interactive/Hearts of Iron IV/mod/Cold War Iron Curtain"
+path="mod/descriptor"
 picture="thumbnail.png"
 
 tags={
