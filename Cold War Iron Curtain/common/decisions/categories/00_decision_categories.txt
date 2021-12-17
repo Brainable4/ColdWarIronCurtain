@@ -18,6 +18,22 @@ The_October_War = {
 	icon = revolt
 		
 }
+UN_Kashmir_Refferendum_category = {
+	allowed = {
+		OR = {
+			tag = RAJ
+			tag = PAK
+			tag = UNS
+		}
+
+	}
+
+	icon = generic_political_actions
+
+	#picture = decision_category_army_reform
+	priority = 150
+
+}
 Karen_Conflict = {
 	allowed = {
 		OR = {
@@ -992,4 +1008,42 @@ reinstate_nkrumah_0 = {
 			}
 			tag = NGA
 		}
+}
+
+Eastern_Bloc = {
+	allowed = {
+		NOT = {
+			is_in_faction_with = SOV
+		}
+		tag = PRC
+	}
+	icon = generic_political_actions
+	visible = {
+		has_country_flag = PRC_Soviet_Aligned
+		has_country_flag = PRC_SOV_Victory
+	}
+	priority = 85
+}
+PRC_Beijing_Pact_Category1 = {
+	allowed = {
+		tag = prc
+	}
+	icon = generic_political_actions
+	visible = {
+		has_completed_focus = PRC_SOV_Found_the_Bejing_Pact
+		has_war = no
+	}
+	priority = 65
+}
+PRC_Beijing_Pact_Category2 = {
+	allowed = {
+		tag = prc
+	}
+	icon = generic_political_actions
+	visible = {
+		has_completed_focus = PRC_SOV_Launch_the_Second_5_Year_Plan
+		has_completed_focus = PRC_SOV_Found_the_Bejing_Pact
+		has_war = no
+	}
+	priority = 75
 }

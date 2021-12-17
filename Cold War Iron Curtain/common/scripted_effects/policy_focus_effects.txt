@@ -913,6 +913,129 @@ increase_State_Directed_Economy = {
     }	
 }
 
+decrease_Religous_Upheaval = {
+    if = {
+        limit = {
+            has_idea = Religous_Upheaval8
+        }   
+        add_ideas = Religous_Upheaval7
+        remove_ideas = Religous_Upheaval8
+    }	
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval7
+        }   
+        add_ideas = Religous_Upheaval6
+        remove_ideas = Religous_Upheaval7
+    }	
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval6
+        }   
+        add_ideas = Religous_Upheaval5
+        remove_ideas = Religous_Upheaval4
+    }			
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval5
+        }   
+        add_ideas = Religous_Upheaval4
+        remove_ideas = Religous_Upheaval5
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval4
+        }   
+        add_ideas = Religous_Upheaval3
+        remove_ideas = Religous_Upheaval4
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval3
+        }   
+        add_ideas = Religous_Upheaval2
+        remove_ideas = Religous_Upheaval3
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval2
+        }   
+        add_ideas = Religous_Upheaval
+        remove_ideas = Religous_Upheaval2
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval
+        }
+        add_ideas = Religous_Upheaval0
+        remove_ideas = Religous_Upheaval
+    }	
+    else = {
+        remove_ideas = Religous_Upheaval0
+    }	
+}
+increase_Religous_Upheaval = {
+    if = {
+        limit = {
+            has_idea = Religous_Upheaval0
+        }   
+        add_ideas = Religous_Upheaval
+        remove_ideas = Religous_Upheaval0
+    }		
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval
+        }   
+        add_ideas = Religous_Upheaval2
+        remove_ideas = Religous_Upheaval
+    }			
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval2
+        }   
+        add_ideas = Religous_Upheaval3
+        remove_ideas = Religous_Upheaval2
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval3
+        }   
+        add_ideas = Religous_Upheaval4
+        remove_ideas = Religous_Upheaval3
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval4
+        }   
+        add_ideas = Religous_Upheaval5
+        remove_ideas = Religous_Upheaval4
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval5
+        }   
+        add_ideas = Religous_Upheaval6
+        remove_ideas = Religous_Upheaval5
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval6
+        }   
+        add_ideas = Religous_Upheaval7
+        remove_ideas = Religous_Upheaval6
+    }
+    else_if = {
+        limit = {
+            has_idea = Religous_Upheaval7
+        }   
+        add_ideas = Religous_Upheaval8
+        remove_ideas = Religous_Upheaval7
+    }
+    else = {
+        add_ideas = Religous_Upheaval0
+    }	
+}
+
 decrease_Weak_Coalition = {
     if = {
         limit = {
@@ -1774,9 +1897,9 @@ india_economic_towards_left = {
             check_variable = {
                 research_speed_factor > 0
             }
-            add_to_variable = {
-                research_speed_factor = -0.005
-            }
+        }
+        add_to_variable = {
+            research_speed_factor = -0.005
         }
     }
     add_to_variable = {
@@ -1827,9 +1950,9 @@ india_economic_towards_communism = {
             check_variable = {
                 research_speed_factor > 0
             }
-            add_to_variable = {
-                research_speed_factor = -0.01
-            }
+        }
+        add_to_variable = {
+            research_speed_factor = -0.01
         }
     }
     add_to_variable = {
@@ -1924,10 +2047,16 @@ india_economic_towards_capitalism = {
 Reduce_Provincial_Tensions = {
     custom_effect_tooltip = Reduce_Provincial_Tensions_TT
     add_to_variable = { PAK_Provincial_Tensions = 0.025 }
+    every_owned_state = {
+      add_to_variable = { PAK_Provincial_Tensions = 0.025 }  
+    }
 }
 Increase_Provincial_Tensions = {
     custom_effect_tooltip = Increase_Provincial_Tensions_TT
     add_to_variable = { PAK_Provincial_Tensions = -0.025 }
+    every_owned_state = {
+      add_to_variable = { PAK_Provincial_Tensions = -0.025 }  
+    }
 }
 
 Increase_Kurdish_Tensions = {
@@ -1980,4 +2109,15 @@ Decrease_Kurdish_Tensions = {
 		}
     }
 }
-
+normalize_kashmiri_refferendum_data = {
+    UNS = {
+        set_variable = { 
+            total_kashmir_support = RAJ.kashmir_support
+        }
+        add_to_variable = {
+            total_kashmir_support = PAK.kashmir_support
+        }
+        divide_variable = { RAJ.kashmir_support = total_kashmir_support }
+        divide_variable = { PAK.kashmir_support = total_kashmir_support }
+    }
+}

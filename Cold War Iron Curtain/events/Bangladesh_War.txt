@@ -614,7 +614,7 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_Liberation_War.5"}	
 	title = "China Warns us Over Kashmir Claims"
 	desc = BAN_Liberation_War.5.d
-	picture = GFX_BAN_Liberation_War_5
+	picture = GFX_Sino_India_Pact_2
 
 	is_triggered_only = yes
 	option = {
@@ -639,7 +639,7 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_Liberation_War.6"}	
 	title = "US Warns us Over Kashmir Claims"
 	desc = BAN_Liberation_War.6.d
-	picture = GFX_BAN_Liberation_War_6
+	picture = GFX_Sino_India_Pact_2
 
 	is_triggered_only = yes
 	option = {
@@ -664,7 +664,7 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_Liberation_War.7"}	
 	title = "India Requests UN Ceasefire"
 	desc = BAN_Liberation_War.7.d
-	picture = GFX_BAN_Liberation_War_7
+	picture = GFX_UN_RESOLUTION_9
 
 	is_triggered_only = yes
 	option = {
@@ -769,10 +769,10 @@ country_event = {
                 PAK = {
                     has_idea = POWs_In_India
                 }
-                country_event = {
-                    id = BAN_Liberation_War.12
-                    days = 125
-                }
+            }
+            country_event = {
+                id = BAN_Liberation_War.12
+                days = 125
             }
         }
         else = {
@@ -862,6 +862,10 @@ country_event = {
         }   
         PAK = {
             country_event = BAN_Liberation_War.16
+            country_event = {
+                id = BAN_Liberation_War.19
+                days = 35
+            }
         }
         news_event = {
             id = BAN_Liberation_War.17
@@ -933,7 +937,7 @@ country_event = {
 country_event = {
 	id = BAN_Liberation_War.19
     immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_Liberation_War.19"}	
-	title = "Sheikh Mujibur Rahman Returns!"
+	title = "POWs Return fromm India!"
 	desc = BAN_Liberation_War.19.d
 	picture = GFX_BAN_Liberation_War_19
 
@@ -1280,7 +1284,7 @@ country_event = {
 news_event = {
 	id = Awami_League_Win.5
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = Awami_League_Win.5"}
-	title = "[GetNewspaperHeader]Pakistan Withdrawal from Bangladesh"
+	title = "[GetNewspaperHeader]Pakistani Withdrawal from Bangladesh"
 	desc = Awami_League_Win.5.d
 	picture = GFX_Awami_League_Win_5
 
@@ -1552,7 +1556,7 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetTag]: id = Bangladesh_War.10"}	
 	title = "China Sends Warning"
 	desc = Bangladesh_War.10.d
-	picture = GFX_Bangladesh_War_10
+	picture = GFX_Sino_India_Conflict1
 
 	is_triggered_only = yes
 	option = {
@@ -1645,7 +1649,7 @@ country_event = {
     immediate = {log = "[GetDateText]: [Root.GetTag]: id = Bangladesh_War.13"}	
 	title = "Pakistan Requests UN Ceasefire"
 	desc = Bangladesh_War.13.d
-	picture = GFX_Bangladesh_War_13
+	picture = GFX_UN_RESOLUTION_9
 
 	is_triggered_only = yes
 	option = {
@@ -2143,4 +2147,41 @@ country_event = {
         set_country_flag = Diplomatic_Approach
         add_stability = 0.02
 	}
+}
+
+add_namespace = Delhi_Ageement
+news_event = {
+	id = Delhi_Ageement.1
+ immediate = {log = "[GetDateText]: [Root.GetTag]: id = Delhi_Ageement.1"}
+	title = "[GetNewspaperHeader]The Delhi Agreement"
+	desc = Delhi_Ageement.1.d
+	picture = GFX_Delhi_Ageement_1
+
+	is_triggered_only = yes
+	major = yes
+	option = {
+        trigger = {
+            tag = PAK
+        }
+		name = "Bring our boys home"
+        add_manpower = 60000
+        remove_ideas = POWs_In_India
+	}
+    option = {
+        name = "Good"
+        trigger = {
+            OR = {
+                tag = RAJ
+                tag = BAN
+            }
+        }
+    }
+    option = {
+        name = "Interesting"
+        trigger = {
+            NOT = { tag = RAJ }
+            NOT = { tag = PAK }
+            NOT = { tag = BAN }
+        }
+    }
 }

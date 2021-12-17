@@ -3,11 +3,18 @@ focus_tree = {
 	country = {
 		factor = 0
 		modifier = {
-			add = 0
+			add = 100
 			tag = PAK
 		}
 	}
 	default = no
+	shared_focus = PAK_70s_Pakistan_Armed_Forces
+	shared_focus = PAK_70s_Project_706
+	shared_focus = PAK_70s_Baluchistan_Uprising
+	shared_focus = PAK_70s_Soviet_Invasion_Of_Afghanistan
+	shared_focus = PAK_70s_Religious_Upheaval
+	shared_focus = PAK_70s_Economy_Of_Pakistan
+	shared_focus = PAK_70s_Kashmir_Situation
 	focus = {
 		id = PAK_70s_New_Constitution_Announced
 		icon = GFX_GenericPolitical
@@ -17,6 +24,12 @@ focus_tree = {
 			search_filters = { IC_FILTER }
 			completion_reward = {
 				add_political_power = 100
+				add_ideas = Religious_Parties_Agitated
+				add_to_variable = {
+					CorruptionLevel = 0.05
+				}
+				corruption_idea_calc = yes
+				custom_effect_tooltip = Increase_Corruption_TT
 }
 
 	}
@@ -413,7 +426,15 @@ focus_tree = {
 		y = 3
 			search_filters = { IC_FILTER }
 			completion_reward = {
-				country_event = Bhutto_70s.21
+				#5 year spirit "FSF Expanded Leadership" gives party popularity/stability, reduces organization of military
+				add_timed_idea = {
+					idea = FSF_Expanded_Leadership
+					days = 1825
+				}
+				add_popularity = {
+					ideology = Social_Democratic
+					popularity = 0.05
+				}
 }
 
 	}
@@ -601,7 +622,7 @@ focus_tree = {
 		y = 1
 			search_filters = { IC_FILTER }
 			completion_reward = {
-				country_event = Bhutto_70s.22
+				add_political_power = 75
 }
 
 	}
@@ -616,7 +637,13 @@ focus_tree = {
 		y = 2
 			search_filters = { IC_FILTER }
 			completion_reward = {
-				country_event = Bhutto_70s.23
+				#meant to placate NWFP and NAP party, leads to spirit called "provincial challenges" for 3 years, hurts economy
+				add_political_power = 100
+				add_stability = 0.05
+				add_timed_idea = {
+					idea = Provincial_Challenges
+					days = 1090
+				}
 }
 
 	}
@@ -631,7 +658,14 @@ focus_tree = {
 		y = 2
 			search_filters = { IC_FILTER }
 			completion_reward = {
-				country_event = Bhutto_70s.24
+				add_popularity = {
+					ideology = islamism
+					popularity = 0.05
+				}
+				swap_ideas = {
+					remove_idea = Religious_Parties_Agitated
+					add_idea = Religious_Parties_Agitated2
+				}
 }
 
 	}
@@ -650,6 +684,7 @@ focus_tree = {
 			search_filters = { IC_FILTER }
 			completion_reward = {
 				country_event = Bhutto_70s.20
+				remove_ideas = Religious_Parties_Agitated2
 }
 
 	}
@@ -1011,7 +1046,11 @@ focus_tree = {
 		y = 4
 			search_filters = { IC_FILTER }
 			completion_reward = {
-				country_event = Bhutto_70s.25
+				add_to_variable = {
+					CorruptionLevel = -0.05
+				}
+				corruption_idea_calc = yes
+				custom_effect_tooltip = Decrease_Corruption_TT
 }
 
 	}

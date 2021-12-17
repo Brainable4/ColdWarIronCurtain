@@ -90,6 +90,7 @@ set_technology = {
 	airborne_operations_1 = 1
 	army_sp_forces_1 = 1
 	desert_warfare_1 = 1
+	cover_air_operations_1 = 1
 	
 ##Support##
 	
@@ -280,7 +281,7 @@ create_country_leader = {
 	ideology = labor_zionism_mapai
 	traits = {
 	Founder_of_Tshal
-	Charismatic_leader
+	#sCharismatic_leader
 	militaristic_posture
     Western_sympaties
 	plays_tough

@@ -257,7 +257,7 @@ focus_tree = {
 				always = no
 			}
 			completion_reward = {
-				load_focus_tree = PAK_70s
+				country_event = DemRahman1970.3
 }
 
 	}
@@ -389,6 +389,10 @@ focus_tree = {
 				add_timed_idea = {
 					idea = PAK_Diverted_Military_Funding
 					days = 1825
+				}
+				add_popularity = {
+					ideology = socialist
+					popularity = 0.05
 				}
 }
 

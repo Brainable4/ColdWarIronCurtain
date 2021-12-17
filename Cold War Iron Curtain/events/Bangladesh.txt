@@ -1,6 +1,4 @@
 
-Foreign Policy Tree Events
-(Events from BAN_Reach_Out_To_China)
 add_namespace = BAN_FOR
 
 country_event = {
@@ -45,7 +43,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.2"}
 	title = "China Establishes Full Diplomatic Relations"
 	desc = BAN_FOR.2.d
-	picture = GFX_BAN_FOR_2
+	picture = GFX_BAN_FOR_1
 
 	fire_only_once = yes
 
@@ -60,7 +58,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.3"}
 	title = "China Offers Trade and Military Aid"
 	desc = BAN_FOR.3.d
-	picture = GFX_BAN_FOR_3
+	picture = GFX_BAN_FOR_1
 
 	fire_only_once = yes
 
@@ -168,7 +166,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.5"}
 	title = "Soviet Experts Arrive"
 	desc = BAN_FOR.5.d
-	picture = GFX_BAN_FOR_5
+	picture = GFX_BAN_FOR_4
 
 	fire_only_once = yes
 
@@ -236,7 +234,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.7"}
 	title = "Pakistan Offers Some Return of Assets"
 	desc = BAN_FOR.7.d
-	picture = GFX_BAN_FOR_7
+	picture = GFX_BAN_FOR_6
 
 	fire_only_once = yes
 
@@ -267,7 +265,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.8"}
 	title = "Pakistan Agrees to Return Assets"
 	desc = BAN_FOR.8.d
-	picture = GFX_BAN_FOR_8
+	picture = GFX_BAN_FOR_6
 
 	fire_only_once = yes
 
@@ -329,7 +327,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.10"}
 	title = "India Agrees to Talks on the Border Situation"
 	desc = BAN_FOR.10.d
-	picture = GFX_BAN_FOR_10
+	picture = GFX_BAN_FOR_9
 
 	fire_only_once = yes
 
@@ -387,7 +385,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.12"}
 	title = "Bangladesh Wants Population Transfers"
 	desc = BAN_FOR.12.d
-	picture = GFX_BAN_FOR_12
+	picture = GFX_BAN_FOR_11
 
 	fire_only_once = yes
 
@@ -429,7 +427,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_FOR.13"}
 	title = "Border Talks Fail"
 	desc = BAN_FOR.13.d
-	picture = GFX_BAN_FOR_13
+	picture = GFX_BAN_FOR_11
 
 	fire_only_once = yes
 
@@ -520,7 +518,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_ECON.3"}
 	title = "Nationalized Jute Mills Suffer Problems"
 	desc = BAN_ECON.3.d
-	picture = GFX_BAN_ECON_3
+	picture = GFX_BAN_ECON_2
 
 	fire_only_once = yes
 
@@ -545,7 +543,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_ECON.4"}
 	title = "Committee Recommends Privatization of Jute Industry"
 	desc = BAN_ECON.4.d
-	picture = GFX_BAN_ECON_4
+	picture = GFX_BAN_ECON_2
 
 	fire_only_once = yes
 
@@ -570,7 +568,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_ECON.5"}
 	title = "Assessment of Semi-Privatized Jute Industry"
 	desc = BAN_ECON.5.d
-	picture = GFX_BAN_ECON_5
+	picture = GFX_BAN_ECON_2
 
 	fire_only_once = yes
 
@@ -609,7 +607,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_ECON.11"}
 	title = "Incentivize Jute Development"
 	desc = BAN_ECON.11.d
-	picture = GFX_BAN_ECON_11
+	picture = GFX_BAN_ECON_2
 
 	fire_only_once = yes
 
@@ -638,7 +636,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_ECON.12"}
 	title = "Some Support for Jute Development"
 	desc = BAN_ECON.12.d
-	picture = GFX_BAN_ECON_12
+	picture = GFX_BAN_ECON_2
 
 	fire_only_once = yes
 
@@ -661,7 +659,7 @@ country_event = {
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_ECON.13"}
 	title = "Huge Support for Jute Development"
 	desc = BAN_ECON.13.d
-	picture = GFX_BAN_ECON_13
+	picture = GFX_BAN_ECON_2
 
 	fire_only_once = yes
 
@@ -880,7 +878,7 @@ news_event = {
 				tag = BAN
 			}
 			hidden_effect = {
-				set_politcs = {
+				set_politics = {
 					ruling_party = neutrality
 					elections_allowed = no
 				}
@@ -975,7 +973,7 @@ country_event = {
 		67003 = {
 			 promote_leader = yes
 		 }
-		 retire_unit_leader = 67004
+		 remove_unit_leader = 67004
 		set_country_flag = Ziaur_Rahman_Check
 		country_event = {
 			id = Rahman_Assasination.7
@@ -1352,7 +1350,7 @@ news_event = {
 				tag = BAN
 			}
 			hidden_effect = {
-				set_politcs = {
+				set_politics = {
 					ruling_party = trotskyism
 					elections_allowed = no
 				}
@@ -1402,9 +1400,6 @@ country_event = {
 	}
 }
  
-
-Reduce Indian Presence 
--A new era (if any military access agreements with India, these are cancelled, drop in trade ties/relations with India)
 country_event = {
 	id = Khondaker_Regime.3
  immediate = {log = "[GetDateText]: [Root.GetTag]: id = Khondaker_Regime.3"}
@@ -1471,7 +1466,7 @@ country_event = {
 			days = 1050
 		}
 		swap_ideas = {
-			remove_ideas = Economic_Stagnation_3
+			remove_idea = Economic_Stagnation_3
 			add_idea = Economic_Stagnation_2
 		}
 	}
@@ -1658,11 +1653,11 @@ country_event = {
 	}
 }
 country_event = {
-	id = Shafiullah.7
- 	immediate = {log = "[GetDateText]: [Root.GetTag]: id = Shafiullah.7"}
+	id = Shafiullah.8
+ 	immediate = {log = "[GetDateText]: [Root.GetTag]: id = Shafiullah.8"}
 	title = "Announce New Elections"	
-	desc = Shafiullah.7.d
-	picture = GFX_Shafiullah_7
+	desc = Shafiullah.8.d
+	picture = GFX_Shafiullah_8
 
 	fire_only_once = yes
 	is_triggered_only = yes
@@ -1724,7 +1719,7 @@ country_event = {
 			ideology = nationalist
 			popularity = 0.50
 		}
-		set_politcs = {
+		set_politics = {
 			ruling_party = nationalist
 			elections_allowed = no
 		}
@@ -2040,7 +2035,7 @@ country_event = {
 				has_idea = Economic_Stagnation_3
 			}
 			swap_ideas = {
-				remove_ideas = Economic_Stagnation_3
+				remove_idea = Economic_Stagnation_3
 				add_idea = Economic_Stagnation_2
 			}
 		}
@@ -2049,7 +2044,7 @@ country_event = {
 				has_idea = Economic_Stagnation_2
 			}
 			swap_ideas = {
-				remove_ideas = Economic_Stagnation_2
+				remove_idea = Economic_Stagnation_2
 				add_idea = Economic_Stagnation
 			}
 		}
@@ -2376,8 +2371,6 @@ country_event = {
 
 	}
 }
-Dacca Cantonment Revolt (Bangladesh event)
--Damn (in two weeks, event "Respond to the Uprising")
 
 country_event = {
 	id = JAF_472.4
@@ -2514,7 +2507,7 @@ news_event = {
 				tag = BAN
 			}
 			hidden_effect = {
-				set_politcs = {
+				set_politics = {
 					ruling_party = trotskyism
 					elections_allowed = no
 				}
@@ -2673,7 +2666,7 @@ country_event = {
 		name = "A new era?"
 		#load_focus_tree = BAN_80s_Ershad
 		#Jatiya Party
-		set_politcs = {
+		set_politics = {
 			ruling_party = Liberal_Conservatism
 			ruling_party = nationalist
 		}
@@ -2732,7 +2725,7 @@ country_event = {
 	}
 	option = {
 		name = "Keep the groups banned"
-		add_ideas = Islamic Suppression 	#Increase Civ Factory Demand
+		add_ideas = Islamic_Suppression 	#Increase Civ Factory Demand
 		add_popularity = {
 			ideology = islamism
 			popularity = 0.15
@@ -2973,7 +2966,7 @@ country_event = {
 	}
 	option = {
 		name = "Keep Bangladesh is secular"
-		add_ideas = Islamic Suppression 	#Increase Civ Factory Demand
+		add_ideas = Islamic_Suppression 	#Increase Civ Factory Demand
 		add_popularity = {
 			ideology = islamism
 			popularity = 0.15
@@ -3136,9 +3129,6 @@ country_event = {
 		}	
 	}
 }
-
-- Program (that event chain starts, in a couple weeks, get event "Unity Government Broken")
-
 
 country_event = {
 	id = FG_UNITY.8
@@ -4105,19 +4095,21 @@ news_event = {
 
 	immediate = {
 		hidden_effect = {
-			limit = {
-				tag = PAK
-			}
-			annex_country = {
-				target = BAN
-				transfer_troops = yes
-			}
-			every_owned_state = {
+			if = {
 				limit = {
-					is_core_of = BAN
+					tag = PAK
 				}
-				add_dynamic_modifier = {
-					modifier = autonomous_state
+				annex_country = {
+					target = BAN
+					transfer_troops = yes
+				}
+				every_owned_state = {
+					limit = {
+						is_core_of = BAN
+					}
+					add_dynamic_modifier = {
+						modifier = autonomous_state
+					}
 				}
 			}
 		}
@@ -4188,7 +4180,7 @@ country_event = {
 		load_focus_tree = BAN_70s_Second_General_Election
 		complete_national_focus = BAN_Second_General_Elections
 		complete_national_focus = BAN_Conservative_Coalition
-		set_politcs = {
+		set_politics = {
 			ruling_party = nationalist
 			elections_allowed = no
 		}
@@ -4316,7 +4308,7 @@ country_event = {
 			idea = Politicized_Civil_Service	#boost to Stability, drop in construction of infrastructure or factories)
 			days = 2920
 		}
-		add_political_power = {
+		add_popularity = {
 			ideology = socialist
 			popularity = 0.05
 		}
@@ -4339,11 +4331,11 @@ country_event = {
 			idea = Transitioning_Civil_Service	#drop to Stability, slight drop in construction of infra or factories)
 			days = 2920
 		}
-		add_political_power = {
+		add_popularity = {
 			ideology = socialist
 			popularity = -0.05
 		}
-		add_political_power = {
+		add_popularity = {
 			ideology = nationalist
 			popularity = 0.05
 		}		
@@ -4484,11 +4476,11 @@ country_event = {
 	
 	option = {
 		name = "They will get over it"
-		add_political_power = {
+		add_popularity = {
 			ideology = socialist
 			popularity = -0.1
 		}
-		add_political_power = {
+		add_popularity = {
 			ideology = nationalist
 			popularity = 0.1
 		}		
@@ -4513,10 +4505,27 @@ country_event = {
 			idea = Civil_Service_in_Transition
 			days = 3650
 		}
+		hidden_effect = {
+			country_event = {
+				id = BAN_CC.100
+				days = 3650
+			}
+		}
 	}
 	option = {
 		name = "Keep it as it is"
 		add_ideas = Colonial_Bureaucratic_Tradition	#drop in stability, increased civ factory demands, boost in building farms/infra)
+	}
+}
+country_event = {
+	id = BAN_CC.100
+ 	immediate = {log = "[GetDateText]: [Root.GetTag]: id = BAN_CC.100"}
+
+	fire_only_once = yes
+	is_triggered_only = yes
+	hidden = yes
+	immediate = {
+		add_ideas = Reformed_Civil_Service
 	}
 }
 country_event = {
@@ -5008,7 +5017,7 @@ news_event = {
 				tag = BAN
 			}
 			hidden_effect = {
-				set_politcs = {
+				set_politics = {
 					ruling_party = trotskyism
 					elections_allowed = no
 				}
@@ -5051,100 +5060,3 @@ news_event = {
 	}
 }
 
-FOCUS DESCS
-Mixed Economy Growth (description)
-"The recent economic initiatives have set Bangladesh on a path of a true mixed economy. We will gain the benefits of both a free market and socialist economy. Providing the potential of growth while also preserving the people from exploitation. Balancing our economy is the key for the stable economic growth of Bangladesh."
-Seize Pakistan Assets (Description)
-"A number of private Pakistani corporations and businessmen continue to hold assets. These carpetbaggers have long drained our wealth to their bank accounts in Lahore. We will seize these assets in the name of the people."
--5 year spirit "Seized Pakistan Assets" should lower consumer good demand
-Expand Worker Rights (Description)
-"The previous regime and the British colonial state long suppressed the rights of workers in our land. The time to rectify this is now. The government will recognize unions and legalize the right to strike."
--5 year spirit "Expanded Worker Rights" increase in stability, increase in consumer good demand
-Restore Rural Order (Description)
-"The advent of independence revealed chaos in the countryside. Local administrators and police abandoned their post. The government must re-establish police stations and a sense of security to the people."
-Invite Pakistan to Liquidate Assets (description)
-"Pakistani nationals still possess a number of assets across Bangladesh. It is a legacy of the exploitation our people faced. Although it is well within our rights to seize these assets, to do so would risk weakening our international standing and hurt foreign investment. Instead, we will offer these Pakistanis a fair compensation, and then liquidate these assets to the people of Bangladesh."
-Reduce Foreign Dependence (Description)
-"Our people have long been used as a source of exploitation by foreign powers. As such, the economy is structured to facilitate this draining of national wealth abroad. The government will initiate a series of tariffs and ban certain imports to spur the emergence of a national economy." (leads to spirit "Tariffs and Protections" should give boost to infra/factory construction but also increase the costs)
-Transitioning to Mixed Economy (description)
-"Our five year plan has successfully put Bangladesh on the path of economic independence and equality. The exploitive elements of our economy are being removed while the foundation for a new economy of socialism and equality is laid out."
-Modernize Water Distribution (Description)
-"The government announced a new initiative to modernize water distribution across rural areas of the country. The old infrastructure is now decades old and in need of an upgrade. The effort is being widely praised as an example of state institutions cooperating for the betterment of the people."
-Remove AL Members From Civil Service (description)
-"Die-hard Awami League members, many lacking the proper qualifications or training, were appointed to key civil service posts. In order to restore order and reduce corruption, these Awami League members must be removed."
-Rehabilitate Former Bureaucrats (description)
-"The previous government removed those civil servants trained in the colonial or Pakistan period. Often replacing them with political appointees who lacked proper qualifications. The government will bring these officials back to the civil service. Appointments will be based on qualification and experience, not political allegiance."
-Strengthen Local Police Forces (description)
-"The overly centralized style of governance by the previous regime meant local institutions were declining rapidly. This gave way to a rise in criminal activity, especially in the countryside. This heavily hindered the internal movement of goods and services. The government will initiate a new program to pump funds to local police units and re-introduce pre-independence officers who had been forced into early retirement."
-Deploy Troops in the Countryside (description)
-"The centralized style of rule from the previous government meant very little resources were available to the rural areas, especially the police. As such, smuggling, violence, and robbery are a major problem. To tackle this issue, the government will deploy Army troops from cantonments to bolster the local police and restore order."
-Empower Local Councils (description)
-"The government announced plans to give extensive powers to Local Councils established across rural areas of the country. Many villages complained the previous, centralized system moved too slowly, unable to react effectively to important issues. The Local Councils will ensure effective governance by local people trusted in the villages."
-Investigate Suspected Officers (description)
-"The President understands the previous period of political instability was driven by military officers deeply engaged with politics. Chain of command was often ignored and politicians could call on specific units to protect them. The military is launching an extensive investigation to identify, dismiss, or reform, any personnel found to be engaged in politics or anti-state ideologies. Chain of command must be restored."
-Restore Army Discipline (description)
-"Military officers of various ranks have been involving themselves in politics and unsanctioned violence. In some units commanding officers are powerless in the face of politically connected subordinates. This situation is intolerable, President Ziaur has ordered a thorough crackdown on insubordination from top to bottom."
-Support Bangladesh Nationalism (description)
-"The Awami League and others advocated a cultural, Bengali nationalism. However, this leaves out the Biharis and other minorities in the country. Instead, the country should embrace a new nationalism based on a Bangladeshi identity, not an exclusively Bengali one."
-Re-Islamisation of Bangladesh (description)
-"The traditional Islamic greeting, the call to prayer, and invocation of Islam when starting official government events will become standard practice. The nation remains secular, however, the previous governments were promoting a secularism at the expense of the Islamic identity of Bangladeshis. This will no longer be tolerated."
-Establish Gram Sarkar (description)
-"The new self-government village system called Gram Sarkar will give local authorities a much wider breadth of government power. This will expand democracy on the grassroots level to the people. Government initiatives meant to lift rural people will also be more effectively carried out on the village level."
-Establish Village Defence Party (description)
-"With the success of the Gram Sarkar system, a new Village Defence Party system is being implemented. This will allow the local councils to control, direct, and fund village police/self-defence patrols. The new reform will strengthen security in the villages and finally curb the lawlessness of rural Bangladesh."
-Youth Workshops  (description)
-"The Awami League and its youth wing spent years fostering ties with university and secondary school students. President Ziaur wishes to harness this youth power away from partisan politics. The government will organize Youth Workshops across the country for young people to learn and promote Bangladeshi nationalism."
-Population Planning (description)
-"The leading economists in the country note our high birthrate is the greatest threat to sustainable, economic growth. The economy will eventually be completely unable to match its growth with the increase in population. To combat this issue, a new national campaign, targeting communities with high birthrates, will educate the population on the benefits of family planning."
-Establish BJR Research Institute (description)
-"The President opened the Bangladesh Jute and Rice Institute. This new facility, the first of several planned, will improve agricultural research and planning for the nation. Top researchers and officials will study at the institute and be able to implement experiments to improve the agricultural sector of the economy."
-New Infrastructure Program (description)
-"A healthy national economy relies on the fast, efficient movement of goods across domestic markets. The government announced a new focus and funding initiative to support the construction of new infrastructure projects to better connect all the people of Bangladesh."
-Reverse Collectivization (description)
-"The first government sought to implement agricultural collectivization. However, the practice was alien to our peasants and saw a major drop in production. The President announced plans to end collectivization schemes across the country and return farms to the producers."
-Expand Rural Electrification (description)
-"The rural areas have been neglected by the state since the Mughals ruled the land. Yet these peasants make the backbone of our economy. To aid their lives and offer more opportunities, the government announced the opening of new power plants meant to provide electricity to neglected communities."
-Ban All Political Parties (description)
-"The JSD Central Committee confirmed a ban on all political parties in Bangladesh. It noted the state must be supreme and undivided by partisan politics. All political offices are directed to shutdown and all materials for non-JSD political parties are to be confiscated for destruction."
-Complete Secularization (description)
-"The government announced a ban on the use of any Islamic phrasing on government materials, media broadcasts, or by party officials addressing the population. The JSD claims it is not suppressing Islam, but simply establishing the conditions of a secular state, as envisioned by the founders of Bangladesh. Grassroot Muslim community leaders are said to be infuriated by this change of policy."
-Codify Central Committees (description)
-"The Central Committee finalized its rules, regulations, and powers. They have been bound and released to the public. The decision to write down and release the procedures of the Central Committee are meant to provide the public confidence in their leaders. Critics claim the JSD operates with impunity, but the written records of state organs prove those critics wrong."
-Formalize Rural Militias (description)
-"The rural militias formed to protect the people from criminal elements and corrupt government officials are to be formalized as part of the military. The military are to incorporate these forces when necessary and provide them with access to weapons and facilities. Some military officers are complaining the militias are not compatible, but those officers will soon be brought in to be educated on the merits of our plan."
-Expand Collectivization (description)
-"Agriculture remains a critical component of the economy. Our people were long victims of landlords and colonial exploitation. To make the land fertile and break the feudal class, the government announced a new plan to expand collectivization across the country. This will help bring the early end to the feudal landlord classes."
-Confiscate Excess Wealth (description)
-"The elite landlord classes along with urban capitalists have spent centuries working with enemies of the people to steal the wealth of the nation for themselves. This will no longer be the case. Banks are directed to confiscate funds from individuals who have wealth far beyond what is necessary. For those holding excessive properties, they will be forced to hand much of that income to the state."
-Urban Infrastructure Project (description)
-"The Urban Development Project Phase I is nearing completion. It will provide strong urban infrastructure improvements, to better prepare the nation for an industrial revolution. The project highlights how strong the nation is when it comes together."
-Youth Programs (description)
-"The government announced a series of Youth Programs across the country. These involve civil education, sports, and the arts. This will encourage unity, education, and patriotism among the people of Bangladesh."
-Bengali Cultural Programs (description)
-"Colonialism and the early post-colonial period saw the continued, sustained assault on the language, literature, and art of Bengalis. The government will launch an extensive program to teach the people their heritage and foster patriotism. With a devotion to the nation, the people will be eager to make the sacrifices for the national cause."
-National Bank Reform (description)
-"Private banks remain a bane to the existence of so many Bangladeshi workers. Our own state banks are often too focused on macro-economic issues. A series of new reforms will expand the number of government banks and focus on providing support for the people."
-Empower Local Governments (description)
-"The previous government focused heavily on centralizing power to the capital. As a result, rural areas and provincial cities were neglected. The President announced several new initiatives to promote local governments and improve the condition of those areas outside the capital."
-Reduce Regulations (description)
-"Over regulation stifles economic growth, especially regulations with regards to financing. The Finance Minister announced new measures to encourage the flow of capital in the public and private sector. Despite the promises of new growth, there are some concerns with regards to inflation."
-Agricultural Reform (description)
-"A series of measures will end the forced adoption of communal farming among rural communities. The government claims these measures were akin to colonial efforts at implementing their own artificial view of agriculture in the colonial period. In addition, new funds are being allocated to boost university research in agriculture and send top students abroad to learn from premier agricultural institutions."
-Proclaim a New Constitution (description)
-"After intense debates and discussion, the Constituent Assembly for East Pakistan is prepared to reveal its constitution for the people of East Pakistan. All of Pakistan anxiously awaits to see what type of autonomy and government the people wish." (as noted, once this is complete, depending on player’s choice in previous tree, either constitution a or constitution b event launches)
-Awami League Government (description)
-"Despite calls for a unity government, the people overwhelmingly support the agenda of the Awami League. It would not be fair to deny the people their choice just to ease the ego of the opposition. The Awami League will bring socialism, secularism, and prosperity to the people."
-Form the Jatiya Rakhi Bahini (description)
-"Bangladesh faces unprecedented security challenges, especially in rural areas. Armed bands and corrupt officials run rampant. To solve the issue a new force called the Jatiya Rakhi Bahini has formed. It will become a paramilitary force to target violent groups and support law enforcement. The military is said to be angered as resources and manpower will be diverted from it to arm the group."
-Rehabilitate Displaced Bengalis (description)
-"The chaos of independence displaced many Bengalis, form both rural and urban areas. However, an aggressive effort to relocate and place these families is bearing fruit. The experience of Partition has helped guide this process. This is offering many economic opportunities, especially for those looking to bring in new labor."
-Nationalize Industries (description)
-"Nationalism is a major component of our agenda. The Finance Minister has laid out a vision for beginning the process of gradually nationalizing industries in the country. The process will consist of nationalizing existing industries while supporting efforts to establish new state firms."
-Compulsory Islamic Education (description)
-"For far too long, the Islamic beliefs of our people were neglected by advocates of outside ideologies. This has led to a drop in public morals and crisis of identity. To save future generations, the Education Ministry announced plans to make Islamic Studies a compulsory class for all Bangladeshi children."
-Approach Pakistan for Final Status (description)
-"With the new constitution in force, elections, and a partition of responsibilities, the stage is set for a final decision on the Pakistan Federation. The President of Pakistan is set to meet with the senior East Pakistani leadership. The discussions are expected to last at least two weeks. The main issue will be how to integrate the new changes in East Pakistan with the federal government. Pro-autonomy advocates wish to see East Pakistan emerge virtually independent, holding a military and diplomatic partnership with Pakistan. Pro-federation supporters hope East Pakistan can once again go under federal rule but with a degree of autonomy."
-Rural Banking Reform (description)
-"The government announced plans to establish more government banks in rural areas. These will provide more loans to spur rural growth. More importantly, farmers will be able to make payments in their agricultural goods instead of cash."
-Unity Government (description)
-"The Awami League announced the formation of a unity government. It has agreed to give some cabinet posts to opposition members and keep them abreast of policy. The decision is being widely praised as an act of political maturity that will only strengthen democracy for the young democracy."
